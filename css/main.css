@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* Navigation */
+nav {
+  float: right;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  line-height: 2em;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;
+  /*задаём длинну линии до наведения курсора*/
+  height: 2px;
+  /*задаём ширину линии*/
+  background-color: #00a650;
+  /*задаём цвет линии*/
+  content: "";
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+  /*задаём время анимации*/
+}
+
+nav ul li a:hover {
+  color: #666666;
+}
+
+.logo {
+  float: left;
+  position: relative;
+}
