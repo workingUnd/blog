@@ -1,4 +1,7 @@
-@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
 /* Navigation */
 nav {
   float: right;
@@ -20,26 +23,9 @@ nav ul li {
 nav ul li a {
   display: block;
   line-height: 2em;
-  padding: 10px 40px;
+  padding: 20px 45px;
   text-decoration: none;
   color: #000;
-}
-
-nav ul li a:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 0;
-  /*задаём длинну линии до наведения курсора*/
-  height: 2px;
-  /*задаём ширину линии*/
-  background-color: #00a650;
-  /*задаём цвет линии*/
-  content: "";
-  -webkit-transition: width 0.3s ease-out;
-  transition: width 0.3s ease-out;
-  /*задаём время анимации*/
 }
 
 nav ul li a:hover {
@@ -49,4 +35,9 @@ nav ul li a:hover {
 .logo {
   float: left;
   position: relative;
+  font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  padding: 10px 0;
+  visibility: hidden;
 }

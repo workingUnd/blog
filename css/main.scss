@@ -1,5 +1,9 @@
 @import "variable";
 @import "mixsins";
+
+a{
+    text-decoration: none;
+}
 /* Navigation */
 nav{
     float: right;
@@ -16,9 +20,9 @@ nav{
             a{
                 display: block;
                 line-height: 2em;
-                padding: 10px 40px;
+                padding: 20px 45px;
                 text-decoration: none;
-                @include colorLinks;
+                @include colorLinks;      
             }
         }
     }
@@ -27,5 +31,7 @@ nav{
 .logo{
     float: left;
     position: relative;
-
+    @include logo;
+    padding: 10px 0;
+    visibility: hidden;
 }
