@@ -1,0 +1,120 @@
+@media (max-width: 992px){
+    .wrapper-main-menu {
+        a{
+            padding: 0px!important;
+            margin: 20px;
+        }
+    }
+}
+@media (max-width: 780px){
+    .wrapper-main-menu {
+        li{
+
+            &:nth-child(-n+3){
+                display: none!important;
+            }
+        }
+    }
+}
+@media (max-width: 1020px){
+    .navigation{
+        ul{
+            display: block!important;
+            .content2{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 1350px){
+    .icons {
+        a{
+            display: inline-block!important;
+        }
+    }
+}
+@media (max-width: 900px){
+    .navigation {
+        .content{
+            a{
+                font-size: 70px!important;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    .navigation {
+        .content{
+            a{
+                font-size: 50px!important;
+            }
+        }
+    }
+}
+@media (max-width: 1118px){
+    .cardCarousel{
+        .card-body{
+            .card-title{
+                padding: 3px 0!important;
+            }
+            .card-text{
+                font-size: 33px!important;
+            }
+        }
+    }
+}
+@media (max-width: 765px){
+    .cardCarousel{
+        .card-body{
+            .card-text{
+                font-size: 28px!important;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    .cardCarousel{
+        .card-body{
+            .card-text{
+                font-size: 40px!important;
+            }
+        }
+    }
+}
+@media (max-width: 1200px){
+    .wrapper-menu{
+        ul{
+            a{
+                margin-right: 5px!important;
+                font-size: 13px!important;
+            }
+        }
+    }
+}
+@media (max-width: 993px){
+    .ferst-block{
+        padding: 5rem 2rem!important;
+        h2{
+            font-size: 40px!important;
+        }
+    }
+}
+@media (max-width: 766px){
+    .ferst-block{
+        padding: 5rem 0rem!important;
+        h2{
+            font-size: 25px!important;
+        }
+    }
+}
+@media (max-width: 766px){
+   .second-block{
+    .product{
+        padding: 60px 10px!important;
+        h2{
+         font-size: 40px!important;
+         text-align: center!important;
+        }
+    }
+}
+}

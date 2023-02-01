@@ -9,3 +9,24 @@
     color: $mainTextColor;
     font-size: 30px;
 }
+
+@mixin links-humburg-menu{
+    color: $colorLinks2;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: $fontstext;
+    &:hover{
+        color: pink;
+    }
+}
+@mixin cardCategory{
+    font-size: 23px!important;
+    font-family: $fontstext;
+    color: $colorLinks;
+}
+@mixin cardDescription{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: $fontstext;
+    color: $colorLinks;
+}

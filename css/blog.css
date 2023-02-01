@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+@media (max-width: 992px) {
+  .wrapper-main-menu a {
+    padding: 0px !important;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 780px) {
+  .wrapper-main-menu li:nth-child(-n+3) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1020px) {
+  .navigation ul {
+    display: block !important;
+  }
+  .navigation ul .content2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .icons a {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation .content a {
+    font-size: 70px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigation .content a {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 1118px) {
+  .cardCarousel .card-body .card-title {
+    padding: 3px 0 !important;
+  }
+  .cardCarousel .card-body .card-text {
+    font-size: 33px !important;
+  }
+}
+
+@media (max-width: 765px) {
+  .cardCarousel .card-body .card-text {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardCarousel .card-body .card-text {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper-menu ul a {
+    margin-right: 5px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 993px) {
+  .ferst-block {
+    padding: 5rem 2rem !important;
+  }
+  .ferst-block h2 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .ferst-block {
+    padding: 5rem 0rem !important;
+  }
+  .ferst-block h2 {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 766px) {
+  .second-block .product {
+    padding: 60px 10px !important;
+  }
+  .second-block .product h2 {
+    font-size: 40px !important;
+    text-align: center !important;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*img{
+    position: absolute;
+    padding: 0px;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}*/
+.wrapper-menu nav {
+  padding-top: 30px;
+}
+
+.wrapper-menu ul a {
+  color: #aee8fb !important;
+  margin-right: 30px !important;
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+}
+
+.wrapper-menu ul a:last-child {
+  margin-right: 0;
+}
+
+.wrapper-button .btn {
+  padding: 8px 30px !important;
+  margin-right: 20px;
+}
+
+.wrapper-button .btn:last-child {
+  margin-right: 0px !important;
+}
+
+.wrapper-button .btn a {
+  color: #aee8fb;
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+}
+
+.btn-outline-light:hover {
+  background: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+}
+
+.btn-info:hover {
+  background: #000 !important;
+  border-color: #000 !important;
+}
+
+.description {
+  position: relative;
+  top: 200px;
+}
+
+.description span {
+  color: #aee8fb;
+  font-size: 120px;
+  line-height: 1.1;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.ferst-block {
+  padding: 5rem 7rem;
+}
+
+.ferst-block h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 45px;
+  line-height: 1.3;
+  font-family: "Libre Caslon Display", serif;
+}
+
+.ferst-block .button {
+  text-align: center;
+}
+
+.ferst-block .button .btn {
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.second-block {
+  width: 100%;
+  height: auto;
+  background: #f3e9e2;
+}
+
+.second-block .product {
+  padding: 80px 0;
+}
+
+.second-block .product h2 {
+  font-size: 90px;
+  font-family: "Libre Caslon Display", serif;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.wrapperSlider {
+  margin-top: 80px;
+}
+
+.wrapperSlider .card {
+  border: none !important;
+  text-align: center;
+}
+
+.wrapperSlider .card img {
+  padding: 20px;
+}
+
+.wrapperSlider .card .card-title {
+  margin-bottom: 20px;
+}
+
+.wrapperSlider .card .card-text {
+  height: 150px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 6;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.wrapperSlider .card .card-footer {
+  border: none !important;
+  background: none;
+  margin-bottom: 20px;
+}
+
+.bgBlue {
+  background: #aee8fb !important;
+}
+
+.bgPink {
+  background: #f3e9e2 !important;
+}
+
+.ourPrograms {
+  margin-bottom: 40px;
+}
+
+.ourPrograms h4 {
+  text-transform: uppercase;
+}
