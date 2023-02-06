@@ -108,13 +108,95 @@
     }
 }
 @media (max-width: 766px){
-   .second-block{
-    .product{
-        padding: 60px 10px!important;
-        h2{
-         font-size: 40px!important;
-         text-align: center!important;
+    .second-block{
+        .product{
+            padding: 60px 10px!important;
+            h2{
+                font-size: 40px!important;
+                text-align: center!important;
+            }
         }
     }
 }
+@media (max-width: 767px){
+    .wrapperWidth{
+        display: block!important;
+        .blockImg{
+            width: 100%!important;
+            height: 480px!important;
+            .imagine{
+                border-radius: 20px 0px 0px 0px!important;
+            }
+        }
+        .blockText{
+            width: 100%!important;
+            height: 110px!important;
+            border-radius: 0px 0px 20px 20px!important;
+            p{
+                font-size: 24px!important;
+                padding: 10px 20px!important;
+            }
+        }
+    }
 }
+@media (max-width: 1200px){
+    .card-group{
+        .card{
+            height: 180px!important;
+        }
+    }
+}
+@media (max-width: 800px){
+    .nameHeader{
+        margin-bottom: 20px!important;
+    }
+    .card-group{
+        display: block!important;
+        .card{
+            border-right: none!important;
+            border-bottom: 1px solid #F3E9E2!important;
+            height: auto!important;
+            &:last-child{
+                border-bottom: none!important;
+            }
+        }
+    }
+}
+@media (max-width: 800px){
+    marquee{
+        font-size: 50px!important;
+        padding: 30px 0!important;
+
+    }
+}
+@media (max-width: 600px){
+    marquee{
+        font-size: 30px!important;
+        padding: 30px 0!important;
+
+    }
+}
+
+@media (max-width: 1200px){
+    .headercard{
+        h5{
+            font-size: 30px!important;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .slide-two{
+        .card{
+            .card-text{
+                height: 90px;    
+            }
+            .headercard{
+                h5{
+                    font-size: 40px!important;
+                }
+            }
+        }
+        }
+        }
+

@@ -96,6 +96,80 @@
   }
 }
 
+@media (max-width: 767px) {
+  .wrapperWidth {
+    display: block !important;
+  }
+  .wrapperWidth .blockImg {
+    width: 100% !important;
+    height: 480px !important;
+  }
+  .wrapperWidth .blockImg .imagine {
+    border-radius: 20px 0px 0px 0px !important;
+  }
+  .wrapperWidth .blockText {
+    width: 100% !important;
+    height: 110px !important;
+    border-radius: 0px 0px 20px 20px !important;
+  }
+  .wrapperWidth .blockText p {
+    font-size: 24px !important;
+    padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-group .card {
+    height: 180px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .nameHeader {
+    margin-bottom: 20px !important;
+  }
+  .card-group {
+    display: block !important;
+  }
+  .card-group .card {
+    border-right: none !important;
+    border-bottom: 1px solid #F3E9E2 !important;
+    height: auto !important;
+  }
+  .card-group .card:last-child {
+    border-bottom: none !important;
+  }
+}
+
+@media (max-width: 800px) {
+  marquee {
+    font-size: 50px !important;
+    padding: 30px 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  marquee {
+    font-size: 30px !important;
+    padding: 30px 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .headercard h5 {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide-two .card .card-text {
+    height: 90px;
+  }
+  .slide-two .card .headercard h5 {
+    font-size: 40px !important;
+  }
+}
+
 a {
   text-decoration: none !important;
 }
@@ -260,4 +334,137 @@ a {
 
 .ourPrograms h4 {
   text-transform: uppercase;
+}
+
+.padd {
+  margin-top: 90px;
+}
+
+.wrapperWidth {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapperWidth .blockImg {
+  width: 50%;
+  height: 590px;
+}
+
+.wrapperWidth .blockImg .imagine {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.wrapperWidth .blockText {
+  width: 50%;
+  height: 590px;
+  background: #f3e9e2;
+  border-radius: 20px;
+}
+
+.wrapperWidth .blockText p {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 0 50px;
+  font-size: 45px;
+  font-family: "Libre Caslon Display", serif;
+  line-height: 1.1;
+}
+
+.wrapperNumbers .nameHeader {
+  margin-bottom: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapperNumbers .card {
+  border: none;
+  border-right: 1px solid #000;
+  text-align: center;
+  font-family: "Libre Caslon Display", serif;
+}
+
+.wrapperNumbers .card:last-child {
+  border-right: none;
+}
+
+.wrapperNumbers .card .card-title {
+  font-size: 65px;
+  font-style: italic;
+}
+
+.wrapperNumbers .card p {
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+marquee {
+  font-size: 80px;
+  padding: 35px 0;
+}
+
+.header-name {
+  margin-bottom: 30px;
+}
+
+.slide-two .card {
+  padding: 25px;
+}
+
+.slide-two .card .card-text {
+  height: 150px;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 6;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.slide-two .card .headercard h5 {
+  font-family: "Libre Caslon Display", serif;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.slide-two .card .card-footer {
+  border: none;
+  background: transparent;
+}
+
+.slide-two .card .btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.brNone {
+  border: none !important;
+}
+
+.bgRed {
+  background: #ff3b41 !important;
+}
+
+.clWrite {
+  color: #fff !important;
+}
+
+.clRed {
+  color: #ff3b41;
+}
+
+.slide-tree {
+  text-align: center;
 }
