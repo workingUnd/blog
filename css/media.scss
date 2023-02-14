@@ -189,7 +189,7 @@
     .slide-two{
         .card{
             .card-text{
-                height: 90px;    
+                height: 90px;
             }
             .headercard{
                 h5{
@@ -197,6 +197,47 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1000px){
+    .block-hight{
+        height: 400px!important;
+    }
+}
+
+@media (max-width: 1000px){
+    .padd2{
+        margin-top: 300px!important;
+    }
+}
+
+
+@media (max-width: 900px){
+    .wrapper-text-blocks{
+        .card{
+            .card-title{
+                font-size: 50px!important;
+            }
+            .card-text{
+                font-size: 36px!important;
+            }
         }
+        .btn{
+            margin-top: 10px!important;
         }
+    }
+}
+
+@media (max-width: 400px){
+    .wrapper-text-blocks{
+        .card{
+            .card-title{
+                font-size: 48px!important;
+                line-height: 1;
+            }
+        }
+
+    }
+}
 

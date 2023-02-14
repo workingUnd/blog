@@ -29,7 +29,7 @@
                 });
                  $(".slide-tree").owlCarousel({
                     items:1,
-                    center: true
+                    center: true 
                 });
             });
             

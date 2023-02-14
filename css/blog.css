@@ -170,6 +170,37 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .block-hight {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .padd2 {
+    margin-top: 300px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper-text-blocks .card .card-title {
+    font-size: 50px !important;
+  }
+  .wrapper-text-blocks .card .card-text {
+    font-size: 36px !important;
+  }
+  .wrapper-text-blocks .btn {
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper-text-blocks .card .card-title {
+    font-size: 48px !important;
+    line-height: 1;
+  }
+}
+
 a {
   text-decoration: none !important;
 }
@@ -465,6 +496,51 @@ marquee {
   color: #ff3b41;
 }
 
-.slide-tree {
+.wrapper-image {
+  height: 100px !important;
+}
+
+.wrapper-image .block-hight {
+  height: 600px;
+}
+
+.wrapper-image .block-hight img {
+  position: relative;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.padd2 {
+  margin-top: 600px;
+}
+
+.wrapper-text-blocks .card {
+  border: none;
   text-align: center;
+}
+
+.wrapper-text-blocks .card .card-title {
+  font-size: 90px;
+  font-family: "Libre Caslon Display", serif;
+}
+
+.wrapper-text-blocks .card .card-text {
+  font-size: 44px;
+  font-family: "Libre Caslon Display", serif;
+}
+
+.wrapper-text-blocks .btn {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Libre Caslon Display", serif;
+  padding: 8px 15px;
 }
