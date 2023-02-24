@@ -121,7 +121,25 @@ a{
     position: absolute;
     top: 290px;
     width: 50%;
+    .about{
+        h5{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                -moz-border-radius: 7.5px;
+                -webkit-border-radius: 7.5px;
+                border-radius: 7.5px;
+                background-color: red;
+                margin-right: 10px;
+            }
+        }
 
+    }
     span{
         color: $textColorBlue;
         font-size: 130px;
@@ -129,7 +147,9 @@ a{
         font-family: $fontFameliDisplay;
     }
 }
-.description{
+.descriptiontwo{
+    @extend .description;
+    width: 80%!important;
     .about{
         h5{
             color: #fff;
@@ -366,6 +386,24 @@ marquee{
     }
 
 }
+.responsimg{
+    .block-hight{
+        height: 600px;
+        img{
+            position: relative;
+            padding: 0px;
+            margin: auto;
+            display: block;
+            width: 0px;
+            height: 0px;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}
 .padd2{
     margin-top: 600px;
 }
@@ -579,5 +617,187 @@ marquee{
     p{
         text-align: center;
         font-size: 14px;
+    }
+}
+.blockWith{
+    @include WidthFlex;
+    height: 690px;
+    .blokeone{
+        @include Widthslase;
+    }
+    .bloktwo{
+        @extend .blokeone;
+        background: #f3e9e2;
+        padding: 40px;
+    }
+}
+
+.imagine{
+    @include img;
+}
+.heading{
+    color: red;
+    font-family: $fontFameliDisplay;
+    font-size: 80px;
+    font-style: italic;
+    margin-bottom: 140px;
+    line-height: 1;
+}
+.desctext{
+    p{
+        color: red;
+        font-size: 15px;
+    }
+}
+.slide-4{
+    @extend .slide-two;
+    .card{
+        height: auto!important;
+        .card-text{
+            margin-top: 40px;
+            padding: 0px;
+            height: 190px;
+            text-overflow: none;
+            overflow: visible;
+
+        }
+    }
+}
+.information{
+    text-align: center;
+    .mission{
+        text-transform: uppercase;
+        font-weight: 600;
+
+    }
+    .missiondescript{
+        padding: 0 40px;
+        p{
+            font-size: 50px;
+            font-family: $fontFameliDisplay;
+            line-height: 1.2;
+        }
+    }
+}
+.team{
+    .card{
+        border: none!important;
+        .card-img-top{
+            height: 500px!important;
+            border-radius: 10px;
+            @include img;
+        }
+        .card-title{
+            font-family: $fontFameliDisplay;
+            font-style: italic;
+            font-size: 65px;
+        }
+        .card-text{
+            font-family: $fontFameliDisplay;
+            font-size: 18px;
+        }
+    }
+}
+.blokrespons{
+    @include WidthFlex;
+    height: auto;
+    .textblockone{
+        @include Widthslase;
+        padding-right: 50px;
+        p{
+            font-family: $fontFameliDisplay;
+            font-size: 80px;
+            line-height: 1;
+            span{
+                font-style: italic;
+            }
+        }
+    }
+    .textblocktwo{
+        @include Widthslase;
+        padding: 0 20px;
+        a{
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+    }
+}
+.responsivblock{
+    @include WidthFlex;
+    height: 600px;
+    .blokimg{
+        @include Widthslase;
+        img{
+            @include img;
+            border-radius: 20px;
+        }
+    }
+    .bloktext{
+        @include Widthslase;
+        padding: 90px 50px;
+        h5{
+            font-size: 60px;
+            font-style: italic;
+            font-family: $fontFameliDisplay;
+        }
+        p{
+            margin-top: 220px;
+        }
+        a{
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+.order{
+    order: 1;
+}
+/*.modal {
+position: absolute;?
+left: 0; right: 0; top: 0; bottom: 0;
+background-color: white;
+z-index: 999;
+}*/
+.block-hightbig{
+    height:700px;
+    img{
+        @include responsiveimg;
+    }
+}
+.contimg{
+    height: 600px;
+    img{
+        @include img;
+        border-radius: 20px;
+    }
+}
+.blockfooter{
+    margin-bottom: 60px;
+    height: auto;
+    @include WidthFlex;
+    .footerimg{
+        @include Widthslase;
+        img{
+            @include img;
+            border-radius: 20px;
+        }
+    }
+    .footertext{
+        @include Widthslase;
+        padding: 60px;
+        h5{
+            font-size: 70px;
+            font-family: $fontFameliDisplay;
+            font-style: italic;
+        }
+        .texst{
+            margin: 40px 0;
+            p{
+                margin-top: 40px;
+            }
+        }
+    }
+    a{
+        text-transform: uppercase;
     }
 }

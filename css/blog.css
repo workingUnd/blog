@@ -162,10 +162,10 @@
 }
 
 @media (max-width: 600px) {
-  .slide-two .card .card-text {
+  .slide-two .card .card-text, .slide-4 .card .card-text {
     height: 90px;
   }
-  .slide-two .card .headercard h5 {
+  .slide-two .card .headercard h5, .slide-4 .card .headercard h5 {
     font-size: 40px !important;
   }
 }
@@ -304,42 +304,48 @@
 }
 
 @media (max-width: 1182px) {
-  .description {
+  .description, .descriptiontwo {
     top: 250px !important;
     width: 70% !important;
   }
 }
 
 @media (max-width: 1000px) {
-  .description {
+  .description, .descriptiontwo {
     top: 230px !important;
   }
-  .description span {
+  .description span, .descriptiontwo span {
     font-size: 110px !important;
   }
 }
 
 @media (max-width: 770px) {
-  .description {
+  .description, .descriptiontwo {
     top: 250px !important;
     width: 80% !important;
   }
 }
 
 @media (max-width: 700px) {
-  .description {
+  .description, .descriptiontwo {
     top: 230px !important;
   }
-  .description span {
+  .description span, .descriptiontwo span {
     font-size: 80px !important;
   }
 }
 
 @media (max-width: 665px) {
-  .description {
+  .description, .descriptiontwo {
     top: 280px !important;
   }
-  .description span {
+  .description span, .descriptiontwo span {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 725px) {
+  .descriptiontwo span {
     font-size: 50px !important;
   }
 }
@@ -396,6 +402,198 @@
   .specification {
     width: 100% !important;
     padding: 0 10px !important;
+  }
+}
+
+@media (max-width: 1227px) {
+  .blockWith {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .blockWith {
+    display: block !important;
+  }
+  .blockWith .blokeone, .blockWith .bloktwo {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .imagine {
+    height: 500px !important;
+  }
+  .heading {
+    font-size: 50px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .imagine {
+    height: 400px !important;
+  }
+  .heading {
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .information .missiondescript {
+    padding: 0 40px;
+  }
+  .information .missiondescript p {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .information .missiondescript {
+    padding: 0px !important;
+  }
+  .information .missiondescript p {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .team .card .card-img-top {
+    height: 500px !important;
+  }
+  .team .card .card-title {
+    font-size: 50px !important;
+  }
+  .team .card .card-text {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .team .card .card-title {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blokrespons .textblockone p {
+    font-size: 65px !important;
+  }
+}
+
+@media (max-width: 993px) {
+  .blokrespons .textblockone {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .blokrespons .textblockone p {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .blokrespons {
+    display: block !important;
+  }
+  .blokrespons .textblockone {
+    width: 100% !important;
+    text-align: center;
+    padding-right: 0 !important;
+  }
+  .blokrespons .textblocktwo {
+    width: 100% !important;
+    margin-top: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .blokrespons .textblockone p {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .responsivblock .bloktext p {
+    margin-top: 140px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .responsivblock {
+    display: block !important;
+    height: auto !important;
+  }
+  .responsivblock .blokimg {
+    width: 100% !important;
+  }
+  .responsivblock .blokimg img {
+    height: 600px !important;
+  }
+  .responsivblock .bloktext {
+    width: 100% !important;
+    padding: 40px 0px !important;
+  }
+  .responsivblock .bloktext h5 {
+    font-size: 60px;
+  }
+  .responsivblock .bloktext p {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .responsivblock .blokimg {
+    width: 100% !important;
+  }
+  .responsivblock .blokimg img {
+    height: 400px !important;
+  }
+  .responsivblock .bloktext h5 {
+    font-size: 40px !important;
+  }
+  .responsivblock .bloktext p {
+    margin-top: 40px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .block-hightbig {
+    height: 600px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .blockfooter .footertext {
+    padding: 60px 40px !important;
+  }
+  .blockfooter .footertext h5 {
+    font-size: 60px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .blockfooter {
+    margin-bottom: 40px !important;
+    display: block !important;
+  }
+  .blockfooter .footerimg {
+    padding: 0px 20px !important;
+    width: 100% !important;
+  }
+  .blockfooter .footertext {
+    width: 100% !important;
+    padding: 30px 20px !important;
+  }
+  .blockfooter .footertext h5 {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .blockfooter .footertext h5 {
+    font-size: 40px !important;
   }
 }
 
@@ -518,26 +716,46 @@ a {
   border-color: #000 !important;
 }
 
-.description {
+.description, .descriptiontwo {
   position: absolute;
   top: 290px;
   width: 50%;
 }
 
-.description span {
+.description .about h5, .descriptiontwo .about h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.description .about h5:before, .descriptiontwo .about h5:before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 7.5px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+.description span, .descriptiontwo span {
   color: #aee8fb;
   font-size: 130px;
   line-height: 1;
   font-family: "Libre Caslon Display", serif;
 }
 
-.description .about h5 {
+.descriptiontwo {
+  width: 80% !important;
+}
+
+.descriptiontwo .about h5 {
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
 }
 
-.description .about h5:before {
+.descriptiontwo .about h5:before {
   content: '';
   display: inline-block;
   width: 13px;
@@ -720,11 +938,11 @@ marquee {
   margin-bottom: 30px;
 }
 
-.slide-two .card {
+.slide-two .card, .slide-4 .card {
   padding: 25px;
 }
 
-.slide-two .card .card-text {
+.slide-two .card .card-text, .slide-4 .card .card-text {
   height: 150px;
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -739,18 +957,18 @@ marquee {
   box-orient: vertical;
 }
 
-.slide-two .card .headercard h5 {
+.slide-two .card .headercard h5, .slide-4 .card .headercard h5 {
   font-family: "Libre Caslon Display", serif;
   font-size: 50px;
   font-style: italic;
 }
 
-.slide-two .card .card-footer {
+.slide-two .card .card-footer, .slide-4 .card .card-footer {
   border: none;
   background: transparent;
 }
 
-.slide-two .card .btn {
+.slide-two .card .btn, .slide-4 .card .btn {
   padding: 10px 20px;
   text-transform: uppercase;
 }
@@ -780,6 +998,25 @@ marquee {
 }
 
 .wrapper-image .block-hight img {
+  position: relative;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.responsimg .block-hight {
+  height: 600px;
+}
+
+.responsimg .block-hight img {
   position: relative;
   padding: 0px;
   margin: auto;
@@ -1075,4 +1312,257 @@ marquee {
 .specification p {
   text-align: center;
   font-size: 14px;
+}
+
+.blockWith {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 690px;
+}
+
+.blockWith .blokeone, .blockWith .bloktwo {
+  width: 50%;
+}
+
+.blockWith .bloktwo {
+  background: #f3e9e2;
+  padding: 40px;
+}
+
+.imagine {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.heading {
+  color: red;
+  font-family: "Libre Caslon Display", serif;
+  font-size: 80px;
+  font-style: italic;
+  margin-bottom: 140px;
+  line-height: 1;
+}
+
+.desctext p {
+  color: red;
+  font-size: 15px;
+}
+
+.slide-4 .card {
+  height: auto !important;
+}
+
+.slide-4 .card .card-text {
+  margin-top: 40px;
+  padding: 0px;
+  height: 190px;
+  text-overflow: none;
+  overflow: visible;
+}
+
+.information {
+  text-align: center;
+}
+
+.information .mission {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.information .missiondescript {
+  padding: 0 40px;
+}
+
+.information .missiondescript p {
+  font-size: 50px;
+  font-family: "Libre Caslon Display", serif;
+  line-height: 1.2;
+}
+
+.team .card {
+  border: none !important;
+}
+
+.team .card .card-img-top {
+  height: 500px !important;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card .card-title {
+  font-family: "Libre Caslon Display", serif;
+  font-style: italic;
+  font-size: 65px;
+}
+
+.team .card .card-text {
+  font-family: "Libre Caslon Display", serif;
+  font-size: 18px;
+}
+
+.blokrespons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+
+.blokrespons .textblockone {
+  width: 50%;
+  padding-right: 50px;
+}
+
+.blokrespons .textblockone p {
+  font-family: "Libre Caslon Display", serif;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.blokrespons .textblockone p span {
+  font-style: italic;
+}
+
+.blokrespons .textblocktwo {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.blokrespons .textblocktwo a {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.responsivblock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+}
+
+.responsivblock .blokimg {
+  width: 50%;
+}
+
+.responsivblock .blokimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.responsivblock .bloktext {
+  width: 50%;
+  padding: 90px 50px;
+}
+
+.responsivblock .bloktext h5 {
+  font-size: 60px;
+  font-style: italic;
+  font-family: "Libre Caslon Display", serif;
+}
+
+.responsivblock .bloktext p {
+  margin-top: 220px;
+}
+
+.responsivblock .bloktext a {
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.order {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/*.modal {
+position: absolute;?
+left: 0; right: 0; top: 0; bottom: 0;
+background-color: white;
+z-index: 999;
+}*/
+.block-hightbig {
+  height: 700px;
+}
+
+.block-hightbig img {
+  position: relative;
+  padding: 0px;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contimg {
+  height: 600px;
+}
+
+.contimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.blockfooter {
+  margin-bottom: 60px;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blockfooter .footerimg {
+  width: 50%;
+}
+
+.blockfooter .footerimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.blockfooter .footertext {
+  width: 50%;
+  padding: 60px;
+}
+
+.blockfooter .footertext h5 {
+  font-size: 70px;
+  font-family: "Libre Caslon Display", serif;
+  font-style: italic;
+}
+
+.blockfooter .footertext .texst {
+  margin: 40px 0;
+}
+
+.blockfooter .footertext .texst p {
+  margin-top: 40px;
+}
+
+.blockfooter a {
+  text-transform: uppercase;
 }
