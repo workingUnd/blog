@@ -39,7 +39,10 @@ a{
     position: relative;
     height: 700px;
 }
-
+.wrappercond{
+    position: relative;
+    height: auto;
+}
 .wrapper-menu{
     nav{
         padding-top: 10px;
@@ -77,6 +80,20 @@ a{
         color: #fff!important;
     }
 }
+.wrapper-menu3{
+    @extend .wrapper-menu;
+    ul{
+        a{
+            color: #000!important;
+            &:hover{
+                color: #000!important;
+            }
+        }
+    }
+    .active{
+        color: #000!important;
+    }
+}
 .wrapper-button{
     .btn{
         padding: 8px 25px!important;
@@ -105,6 +122,19 @@ a{
         }
     }
 }
+.wrapper-button3{
+    @extend .wrapper-button;
+    .btn-outline-light{
+        a{
+            color: #fff!important;
+        }
+    }
+    .btn-info{
+        a{
+            color: #fff!important;
+        }
+    }
+}
 .btn-outline-light{
     &:hover{
         background: #0dcaf0!important;
@@ -115,6 +145,7 @@ a{
     &:hover{
         background: #000!important;
         border-color: #000!important;
+        color: #fff!important;
     }
 }
 .description{
@@ -169,6 +200,14 @@ a{
         }
 
     }
+}
+.descriptionpress{
+    @extend .descriptiontwo;
+    top: 400px;
+    span{
+        color: #000!important;
+    }
+
 }
 .ferst-block{
     padding: 5rem 7rem;
@@ -722,6 +761,25 @@ marquee{
         }
     }
 }
+.blokresponstwo{
+    @extend .blokrespons;
+    .textblockone{
+        width: 60%;
+        padding-right: 50px;
+        p{
+            font-size: 80px;
+            line-height: 1;
+            font-style: italic;
+        }
+    }
+    .textblocktwo{
+        width: 40%;
+        padding: 0 20px;
+        p{
+            font-size: 15px;
+        }
+    }
+}
 .responsivblock{
     @include WidthFlex;
     height: 600px;
@@ -799,5 +857,429 @@ z-index: 999;
     }
     a{
         text-transform: uppercase;
+    }
+}
+.testinonials{
+    text-align: center;
+    padding: 0 60px;
+    h5{
+        font-size: 16px;
+    }
+    p{
+        font-size: 50px;
+        font-family: $fontFameliDisplay;
+        line-height: 1;
+        margin-top: 40px;
+        span{
+            font-style: italic;
+        }
+    }
+}
+.contimgheight{
+    @extend .contimg;
+    height: auto;
+}
+.blockflex{
+    @include WidthFlex;
+    height: auto;
+    .bagraund{
+        @include Widthslase;
+        img{
+            @include img;
+        }
+    }
+    .blockwithtext{
+        background: #f3e9e2;
+        @include Widthslase;
+        padding: 120px 80px;
+        a{
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+    }
+}
+.blockflexfoot{
+    @extend .blockflex;
+    height: 700px;
+    h6{
+        margin-bottom: 60px;
+    }
+}
+.flexblock{
+    @include WidthFlex;
+    height: 600px;
+    .fleximg{
+        @include Widthslase;
+        margin-right: 20px;
+        img{
+            @include img;
+            border-radius: 20px;
+        }
+    }
+    .flextext{
+        @include Widthslase;
+        background: #f3e9e2;
+        border-radius: 20px;
+        padding: 0 80px;
+        .textflexs{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        h4{
+            font-family: $fontFameliDisplay;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+    }
+}
+.card-between{
+    .card{
+        border: none!important;
+        border-radius: 10px!important;
+        .card-title{
+            height: 300px;
+            font-size: 15px;
+        }
+        .card-text{
+            font-size: 14px;
+            height: 80px;
+        }
+    }
+}
+.slidersext{
+    .card{
+        border: none!important;
+    }
+    h5{
+        font-family:$fontFameliDisplay;
+        font-size: 60px;
+        font-style: italic;
+        height: 150px;
+    }
+    .card-text{
+        height: 130px;
+        p{
+            font-size: 15px;
+
+        }
+    }
+    .owl-dot{
+        background: transparent!important;
+        height: 13px;
+        width: 13px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #000!important;
+    }
+    .owl-dots{
+        position: absolute;
+        right: 0;
+        top: -60px;
+        .active{
+            height: 8px;
+            width: 8px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #000!important;
+            background: #000!important;
+        }
+    }
+}
+.slider{
+    padding: 40px 0;
+}
+
+.women{
+    height: 650px;
+    @include WidthFlex;
+    .blockwithimg{
+        @include Widthslase;
+        img{
+            @include img;
+        }
+    }
+    .bltext{
+        @include Widthslase;
+        background: #f3e9e2;
+        padding: 80px 75px;
+        p{
+            font-size: 45px;
+            line-height: 1.1;
+            font-family: $fontFameliDisplay;
+            margin-bottom: 30px;
+        }
+        a{
+            text-transform: uppercase;
+        }
+    }
+}
+.slide-tree{
+    background: #f3e9e2;
+    height: auto;
+    padding: 50px 0;
+    .card{
+        text-align: center;
+        background: transparent;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem;
+    }
+    img{
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h6{
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 50px;
+        font-family: $fontFameliDisplay;
+        margin-bottom: 30px;
+    }
+    .card-body{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        p{
+            font-size: 16px;
+            font-family: none;
+        }
+    }
+}
+.card{
+    border: none!important;
+}
+.slide-tree{
+    .owl-dot{
+        background: transparent!important;
+        height: 13px;
+        width: 13px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #000!important;
+
+    }
+    .owl-dots{
+        position: absolute;
+        left: 50%;
+        transform: translate( -50%);
+        .active{
+            height: 8px;
+            width: 8px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #000!important;
+            background: #000!important;
+
+        }
+    }
+}
+.slide-fo{
+    .card{
+        height: 400px;
+        .card-text{
+            font-size: 50px;
+            font-family: $fontFameliDisplay;
+            line-height: 1.1;
+            font-style: italic;
+        }
+    }
+}
+.blocklflex{
+    @include WidthFlex;
+    height: 600px;
+    .photo{
+        @include Widthslase;
+        order: 1;
+        img{
+            @include img;
+            border-radius: 20px;
+        }
+    }
+    .texts{
+        @include Widthslase;
+        padding: 50px;
+        h3{
+            font-size: 65px;
+            font-family: $fontFameliDisplay;
+            font-style: italic;
+            line-height: 1.1;
+            margin-bottom: 60px;
+        }
+        a{
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+    }
+}
+.blocklfle{
+    @extend .blocklflex;
+    .texts{
+        p{
+            font-size: 45px;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+.ofers{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.slide-image{
+    width: 150px;
+    height: 50px;
+    overflow: hidden;
+    margin-right: 30px!important;
+    img{
+        width: initial;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+.slide-sex{
+    .card-header{
+        border: none!important;
+        background: transparent;
+    }
+    .card-body{
+        height: 400px;
+        min-width: auto;
+        max-height: auto;
+        .card-title{
+            font-size: 40px;
+            font-family: $fontFameliDisplay!important;
+            line-height: 1.1;
+            font-weight: 0!important;
+            height: 110px;
+        }
+        .card-text{
+            font-size: 15px;
+        }
+    }
+}
+.justlink{
+    a{
+        position: relative;
+        left: 50%;
+        transform: translate( -50%);
+        margin-top: 20px;
+    }
+}
+.flexcontainer{
+    @include WidthFlex;
+    padding: 60px 0;
+    height: auto;
+    .arimage{
+        @include Widthslase;
+        img{
+            @include img;
+            border-radius: 20px;
+        }
+    }
+    .textacd{
+        @include Widthslase;
+        padding: 40px 50px;
+        h5{
+            font-size: 60px;
+            font-family: $fontFameliDisplay!important;
+            line-height: 1.1;
+            font-style: italic;
+        }
+    }
+}
+.slide-seven{
+    margin-top: 60px;
+    .accordion-item{
+        background: transparent;
+        border: none!important;
+    }
+    .accordion-button{
+        background: transparent!important;
+        color: #000!important;
+        font-weight: 600;
+        border: none!important;
+        box-shadow: none!important;
+    }
+}
+.margincl{
+    margin-top: 60px;
+    .card{
+        span{
+            font-weight: 600;
+        }
+        .card-title{
+            font-size: 60px;
+            margin-top: 20px;
+            font-family: $fontFameliDisplay!important;
+            line-height: 1.1;
+            margin-bottom: 60px;
+        }
+    }
+}
+.results{
+    font-size: 18px!important;
+}
+.tab{
+    .nav-link{
+        border: none!important;
+        color: #000;
+        &:hover{
+            color: #000;
+        }
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            border: 1px solid red;
+            margin-right: 13px;
+        }
+    }
+    .nav-tabs{
+        border: 0!important;
+    }
+}
+.tab{
+    .active{
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: red!important      ;
+            margin-right: 13px;
+        }
+    }
+}
+.headecond{
+    h1{
+        font-size: 80px;
+        font-family: $fontFameliDisplay!important;
+        line-height: 1.1;
+        /*text-align: center;*/
+    }
+}
+.blockteams{
+    display: flex;
+    .blockone{
+        width: 40%;
+        margin-right: 60px;
+        h2{
+            margin-bottom: 40px;
+        }
+    }
+      .blocktwo{
+        width: 40%;
     }
 }
