@@ -20,6 +20,7 @@ li {
 a{
     text-decoration: none!important;
 }
+
 .main-img{
     img{
         position: absolute;
@@ -53,6 +54,7 @@ a{
             margin-right: 20px!important;
             text-transform: uppercase;
             font-family: $fontFemeli;
+            font-weight: 600;
             font-size: 14px;
             &:last-child{
                 margin-right: 0;
@@ -98,6 +100,7 @@ a{
     .btn{
         padding: 8px 25px!important;
         margin-right: 20px;
+        font-size: 15px;
         &:last-child{
             margin-right: 0px!important;
         }
@@ -105,34 +108,34 @@ a{
             color:$colorBlueLinks;
             text-transform: uppercase;
             font-family: $fontFemeli;
-            font-size: 15px;
         }
     }
 }
 .wrapper-button2{
     @extend .wrapper-button;
     .btn-outline-light{
-        a{
-            color: #fff!important;
+        color: #fff!important;
+        &:hover{
+            background: #fff!important;
+            color: #000!important;
+            border: #fff!important;
         }
     }
     .btn-info{
-        a{
-            color: #fff!important;
-        }
+        background: #fff!important;
+        color: #000!important;
+        border: #fff!important;
     }
 }
 .wrapper-button3{
     @extend .wrapper-button;
-    .btn-outline-light{
-        a{
-            color: #fff!important;
-        }
-    }
     .btn-info{
-        a{
-            color: #fff!important;
-        }
+        color: #000!important;
+    }
+    a{
+        font-family: $fontFemeli;
+        font-weight: 600;
+        font-size: 14px;
     }
 }
 .btn-outline-light{
@@ -157,6 +160,7 @@ a{
             color: #fff;
             text-transform: uppercase;
             font-size: 16px;
+            font-family: $fontFemeli;
             &:before{
                 content: '';
                 display: inline-block;
@@ -169,10 +173,25 @@ a{
                 margin-right: 10px;
             }
         }
-
+        h4{
+            color: #000;
+            text-transform: uppercase;
+            font-size: 16px;
+            &:before{
+                content: '';
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                -moz-border-radius: 7.5px;
+                -webkit-border-radius: 7.5px;
+                border-radius: 7.5px;
+                background-color: red;
+                margin-right: 10px;
+            }
+        }
     }
     span{
-        color: $textColorBlue;
+        color: #000;
         font-size: 130px;
         line-height: 1;
         font-family: $fontFameliDisplay;
@@ -204,6 +223,7 @@ a{
 .descriptionpress{
     @extend .descriptiontwo;
     top: 400px;
+
     span{
         color: #000!important;
     }
@@ -211,6 +231,7 @@ a{
 }
 .ferst-block{
     padding: 5rem 7rem;
+    margin-bottom: 10px;
     h2{
         text-align: center;
         margin-bottom: 40px;
@@ -222,10 +243,10 @@ a{
         text-align: center;
         .btn{
             text-transform: uppercase;
-            padding: 10px;
+            padding: 10px 15px;
             font-family: $fontFemeli;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 }
@@ -255,6 +276,9 @@ a{
         }
         .card-title{
             margin-bottom: 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-family: $fontFemeli;
         }
         .card-text{
             height: 150px;
@@ -275,6 +299,13 @@ a{
             border:none!important;
             background: none;
             margin-bottom: 20px;
+            button{
+                text-transform: uppercase;
+                font-family:$fontFemeli;
+                font-size: 13px;
+                padding: 10px 15px;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -288,6 +319,8 @@ a{
     margin-bottom: 40px;
     h4{
         text-transform: uppercase;
+        font-size: 17px;
+        font-family: $fontFemeli;
     }
 }
 .padd{
@@ -296,11 +329,9 @@ a{
 .wrapperWidth{
     width: 100%;
     display: flex;
-
     .blockImg{
         width: 50%;
         height: 590px;
-
         .imagine{
             width: 100%;
             height: 100%;
@@ -331,6 +362,7 @@ a{
         margin-bottom: 70px;
         text-align: center;
         font-weight: bold;
+        font-family: $fontFemeli;
     }
     .card{
         border: none;
@@ -353,10 +385,13 @@ a{
 marquee{
     font-size: 80px;
     padding: 35px 0;
+    font-family: $fontFemeli;
 
 }
 .header-name{
     margin-bottom: 30px;
+    font-family: $fontFemeli;
+    text-transform: uppercase;
 }
 .slide-two{
     .card{
@@ -389,6 +424,9 @@ marquee{
         .btn{
             padding: 10px 20px;
             text-transform: uppercase;
+            font-size: 14px;
+            font-family: $fontFemeli;
+            font-weight: 600;
         }
     }
 }
@@ -444,7 +482,7 @@ marquee{
     }
 }
 .padd2{
-    margin-top: 600px;
+    margin-top: 570px;
 }
 .wrapper-text-blocks{
     .card{
@@ -461,9 +499,11 @@ marquee{
     }
     .btn{
         margin-top: 20px;
-        font-size: 20px;
-        font-family: $fontFameliDisplay;
-        padding: 8px 15px;
+        font-size: 14px;
+        font-family: $fontFemeli;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 15px;
     }
 }
 .footer{
@@ -497,6 +537,19 @@ marquee{
                 margin-right: 0;
             }
         }
+        .send{
+            position: relative;
+        }
+        button {
+            position: absolute;
+            bottom: 10px;
+            right: 5px;
+            background: transparent;
+            border: none;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: 600;
+        }
     }
     input{
         background: transparent;
@@ -529,6 +582,7 @@ marquee{
             }
             a{
                 color: $colorLinks;
+                font-family: $fontFemeli;
                 &:hover{
                     text-decoration: underline!important;
                 }
@@ -580,9 +634,18 @@ marquee{
     --bs-modal-width:100%!important;
     height: 100%!important;
     --bs-modal-margin: 0rem!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:#f3e9e2!important;
+    z-index: 999;
+
 }
 .modal-content{
     background-color:#f3e9e2!important;
+    border: none!important;
 }
 .modal-header{
     border: none!important;
@@ -707,7 +770,7 @@ marquee{
     .mission{
         text-transform: uppercase;
         font-weight: 600;
-
+        font-family: $fontFemeli;
     }
     .missiondescript{
         padding: 0 40px;
@@ -758,6 +821,10 @@ marquee{
         a{
             text-transform: uppercase;
             margin-top: 15px;
+            font-family: $fontFemeli;
+            font-size: 14px;
+            padding: 10px 15px;
+            font-weight: 600;
         }
     }
 }
@@ -804,18 +871,14 @@ marquee{
         a{
             margin-top: 15px;
             text-transform: uppercase;
+            font-family: $fontFemeli;
+            font-size: 16px;
         }
     }
 }
 .order{
     order: 1;
 }
-/*.modal {
-position: absolute;?
-left: 0; right: 0; top: 0; bottom: 0;
-background-color: white;
-z-index: 999;
-}*/
 .block-hightbig{
     height:700px;
     img{
@@ -857,6 +920,8 @@ z-index: 999;
     }
     a{
         text-transform: uppercase;
+        font-family: $fontFemeli;
+        font-size: 16px;
     }
 }
 .testinonials{
@@ -864,6 +929,7 @@ z-index: 999;
     padding: 0 60px;
     h5{
         font-size: 16px;
+        font-family: $fontFemeli;
     }
     p{
         font-size: 50px;
@@ -895,6 +961,9 @@ z-index: 999;
         a{
             text-transform: uppercase;
             margin-top: 20px;
+            font-size: 14px;
+            font-family: $fontFemeli;
+            padding: 10px 15px;
         }
     }
 }
@@ -903,6 +972,7 @@ z-index: 999;
     height: 700px;
     h6{
         margin-bottom: 60px;
+        font-family: $fontFemeli;
     }
 }
 .flexblock{
@@ -939,12 +1009,13 @@ z-index: 999;
         border: none!important;
         border-radius: 10px!important;
         .card-title{
-            height: 300px;
+            height: 250px;
             font-size: 15px;
+            font-family: $fontFemeli;
         }
         .card-text{
             font-size: 14px;
-            height: 80px;
+            height: 110px;
         }
     }
 }
@@ -1012,6 +1083,10 @@ z-index: 999;
         }
         a{
             text-transform: uppercase;
+            font-family: $fontFemeli;
+            font-size: 14px;
+            padding: 10px 15px;
+            font-weight: 600;
         }
     }
 }
@@ -1035,6 +1110,7 @@ z-index: 999;
     }
     h6{
         text-transform: uppercase;
+        font-family: $fontFemeli;
     }
     p{
         font-size: 50px;
@@ -1067,6 +1143,7 @@ z-index: 999;
         position: absolute;
         left: 50%;
         transform: translate( -50%);
+        bottom: 40px;
         .active{
             height: 8px;
             width: 8px;
@@ -1113,6 +1190,10 @@ z-index: 999;
         a{
             text-transform: uppercase;
             margin-top: 15px;
+            font-family: $fontFemeli;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 600;
         }
     }
 }
@@ -1120,8 +1201,10 @@ z-index: 999;
     @extend .blocklflex;
     .texts{
         p{
-            font-size: 45px;
-            margin-bottom: 120px;
+            font-size: 40px;
+            margin-bottom: 100px;
+            font-family: $fontFameliDisplay;
+            line-height: 1.1;
         }
     }
 }
@@ -1129,6 +1212,7 @@ z-index: 999;
 .ofers{
     text-align: center;
     margin-bottom: 60px;
+    font-family: $fontFemeli;
 }
 .slide-image{
     width: 150px;
@@ -1145,6 +1229,8 @@ z-index: 999;
     .card-header{
         border: none!important;
         background: transparent;
+        font-family: $fontFemeli;
+        text-transform: uppercase;
     }
     .card-body{
         height: 400px;
@@ -1168,6 +1254,10 @@ z-index: 999;
         left: 50%;
         transform: translate( -50%);
         margin-top: 20px;
+        font-family: $fontFemeli;
+        font-size: 14px;
+        padding: 10px 15px;
+        font-weight: 600;
     }
 }
 .flexcontainer{
@@ -1204,6 +1294,7 @@ z-index: 999;
         font-weight: 600;
         border: none!important;
         box-shadow: none!important;
+        font-family: $fontFemeli;
     }
 }
 .margincl{
@@ -1211,6 +1302,7 @@ z-index: 999;
     .card{
         span{
             font-weight: 600;
+            font-family: $fontFemeli;
         }
         .card-title{
             font-size: 60px;
@@ -1222,12 +1314,14 @@ z-index: 999;
     }
 }
 .results{
-    font-size: 18px!important;
+    font-size: 16px!important;
+    font-family: $fontFemeli;
 }
 .tab{
     .nav-link{
         border: none!important;
         color: #000;
+        font-family: $fontFemeli;
         &:hover{
             color: #000;
         }
@@ -1277,9 +1371,104 @@ z-index: 999;
         margin-right: 60px;
         h2{
             margin-bottom: 40px;
+            font-family: $fontFemeli;
         }
     }
-      .blocktwo{
+    .blocktwo{
         width: 40%;
     }
+}
+.contact{
+    @include WidthFlex;
+    .askus{
+        @include Widthslase;
+        p{
+            font-size: 15px;
+            padding-right: 15rem;
+        }
+    }
+    .message{
+        @include Widthslase;
+        form{
+            input{
+                margin-bottom: 25px;
+                width: 100%;
+                height: 45px;
+                border: none;
+                border-bottom: 1px solid #000;
+
+            }
+            .massenger{
+                position: relative;
+                textarea{
+                    width: 100%;
+                    height: 150px;
+                    border: none;
+                    border-bottom: 1px solid #000;
+                    resize: none;
+                }
+                button {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 10px;
+                    color:#000;
+                    background: transparent;
+                    border: none;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    font-family: $fontFemeli;
+                    font-weight: 600;
+                }
+            }
+        }
+        ::placeholder {
+            color:#000;
+            font-size: 14px;
+        }
+    }
+}
+.fixedbtn{
+    display: none;
+    a{
+        position: fixed;
+        bottom: 0px;
+        padding: 15px 10px;
+        background:  #aee8fb;
+        text-align: center;
+        width: 100%;
+        z-index: 1030;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+/*.wrapper-menu{
+     position: fixed;
+     top: 0;
+     background: white;
+     width: 100%;
+      z-index: 1030;
+}*/
+.mdposit{
+    margin-top: 110px;
+}
+.mdposit2{
+    margin-top: 90px;
+}
+.mdposit4{
+    margin-top: 60px;
+}
+.mdposit5{
+    margin-top: 70px;
+}
+.md3{
+    margin-top: 100px;
+}
+.md6{
+    margin-top: 30px;
+}
+.md7{
+    margin-top: 10px;
+}
+.fw-bold{
+    font-family: $fontFemeli;
 }

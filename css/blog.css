@@ -118,6 +118,22 @@
   }
 }
 
+@media (max-width: 462px) {
+  .wrapperWidth .blockText {
+    height: 140px !important;
+  }
+  .wrapperWidth .blockText p {
+    font-size: 24px !important;
+    padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .wrapperWidth .blockImg {
+    height: 400px !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .card-group .card {
     height: 180px !important;
@@ -194,9 +210,26 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .wrapper-text-blocks {
+    margin-top: 380px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-text-blocks .card .card-title {
+    font-size: 45px !important;
+    line-height: 1;
+  }
+  .wrapper-text-blocks .card .card-text {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 400px) {
   .wrapper-text-blocks .card .card-title {
-    font-size: 48px !important;
+    font-size: 35px !important;
     line-height: 1;
   }
 }
@@ -303,7 +336,7 @@
   }
 }
 
-@media (max-width: 1182px) {
+@media (max-width: 1254px) {
   .description, .descriptiontwo, .descriptionpress {
     top: 250px !important;
     width: 70% !important;
@@ -319,16 +352,17 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 825px) {
   .description, .descriptiontwo, .descriptionpress {
     top: 250px !important;
     width: 80% !important;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 722px) {
   .description, .descriptiontwo, .descriptionpress {
     top: 230px !important;
+    width: 100% !important;
   }
   .description span, .descriptiontwo span, .descriptionpress span {
     font-size: 80px !important;
@@ -347,6 +381,18 @@
 @media (max-width: 725px) {
   .descriptiontwo span, .descriptionpress span {
     font-size: 50px !important;
+  }
+}
+
+@media (max-width: 756px) {
+  .descriptiontwo span, .descriptionpress span {
+    font-size: 80px !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .descriptiontwo span, .descriptionpress span {
+    font-size: 40px !important;
   }
 }
 
@@ -783,6 +829,13 @@
   }
 }
 
+@media (max-width: 335px) {
+  .slide-tree .owl-dot {
+    height: 10px !important;
+    width: 10px !important;
+  }
+}
+
 @media (max-width: 1199px) {
   .slide-fo .card-text {
     font-size: 40px !important;
@@ -949,6 +1002,67 @@
   }
 }
 
+@media (max-width: 500px) {
+  .tab .nav-link {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tab .nav-link {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact .askus p {
+    padding-right: 5rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    display: block !important;
+  }
+  .contact .askus {
+    width: 100% !important;
+    margin-bottom: 50px;
+  }
+  .contact .askus p {
+    padding-right: 0px !important;
+  }
+  .contact .message {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .fixedbtn {
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-between .card .card-title {
+    height: 180px !important;
+  }
+  .card-between .card .card-text {
+    font-size: 14px;
+    height: 150px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .slidersext {
+    margin-top: 50px !important;
+  }
+  .slidersext .owl-dots {
+    position: absolute;
+    right: 0;
+    top: -40px !important;
+  }
+}
+
 html, body {
   height: 100%;
 }
@@ -1012,6 +1126,7 @@ a {
   margin-right: 20px !important;
   text-transform: uppercase;
   font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
   font-size: 14px;
 }
 
@@ -1054,6 +1169,7 @@ a {
 .wrapper-button .btn, .wrapper-button2 .btn, .wrapper-button3 .btn {
   padding: 8px 25px !important;
   margin-right: 20px;
+  font-size: 15px;
 }
 
 .wrapper-button .btn:last-child, .wrapper-button2 .btn:last-child, .wrapper-button3 .btn:last-child {
@@ -1064,23 +1180,32 @@ a {
   color: #aee8fb;
   text-transform: uppercase;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 15px;
 }
 
-.wrapper-button2 .btn-outline-light a {
+.wrapper-button2 .btn-outline-light {
   color: #fff !important;
 }
 
-.wrapper-button2 .btn-info a {
-  color: #fff !important;
+.wrapper-button2 .btn-outline-light:hover {
+  background: #fff !important;
+  color: #000 !important;
+  border: #fff !important;
 }
 
-.wrapper-button3 .btn-outline-light a {
-  color: #fff !important;
+.wrapper-button2 .btn-info {
+  background: #fff !important;
+  color: #000 !important;
+  border: #fff !important;
 }
 
-.wrapper-button3 .btn-info a {
-  color: #fff !important;
+.wrapper-button3 .btn-info {
+  color: #000 !important;
+}
+
+.wrapper-button3 a {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .btn-outline-light:hover {
@@ -1104,6 +1229,7 @@ a {
   color: #fff;
   text-transform: uppercase;
   font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .description .about h5:before, .descriptiontwo .about h5:before, .descriptionpress .about h5:before {
@@ -1116,8 +1242,24 @@ a {
   margin-right: 10px;
 }
 
+.description .about h4, .descriptiontwo .about h4, .descriptionpress .about h4 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.description .about h4:before, .descriptiontwo .about h4:before, .descriptionpress .about h4:before {
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 7.5px;
+  background-color: red;
+  margin-right: 10px;
+}
+
 .description span, .descriptiontwo span, .descriptionpress span {
-  color: #aee8fb;
+  color: #000;
   font-size: 130px;
   line-height: 1;
   font-family: "Libre Caslon Display", serif;
@@ -1153,6 +1295,7 @@ a {
 
 .ferst-block {
   padding: 5rem 7rem;
+  margin-bottom: 10px;
 }
 
 .ferst-block h2 {
@@ -1169,10 +1312,10 @@ a {
 
 .ferst-block .button .btn {
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 15px;
   font-family: "Red Hat Display", sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .second-block {
@@ -1207,6 +1350,9 @@ a {
 
 .wrapperSlider .card .card-title {
   margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .wrapperSlider .card .card-text {
@@ -1230,6 +1376,14 @@ a {
   margin-bottom: 20px;
 }
 
+.wrapperSlider .card .card-footer button {
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
 .bgBlue {
   background: #aee8fb !important;
 }
@@ -1244,6 +1398,8 @@ a {
 
 .ourPrograms h4 {
   text-transform: uppercase;
+  font-size: 17px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .padd {
@@ -1292,6 +1448,7 @@ a {
   margin-bottom: 70px;
   text-align: center;
   font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .wrapperNumbers .card {
@@ -1318,10 +1475,13 @@ a {
 marquee {
   font-size: 80px;
   padding: 35px 0;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .header-name {
   margin-bottom: 30px;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
 }
 
 .slide-two .card, .slide-4 .card {
@@ -1357,6 +1517,9 @@ marquee {
 .slide-two .card .btn, .slide-4 .card .btn {
   padding: 10px 20px;
   text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
 }
 
 .brNone {
@@ -1418,7 +1581,7 @@ marquee {
 }
 
 .padd2 {
-  margin-top: 600px;
+  margin-top: 570px;
 }
 
 .wrapper-text-blocks .card {
@@ -1438,9 +1601,11 @@ marquee {
 
 .wrapper-text-blocks .btn {
   margin-top: 20px;
-  font-size: 20px;
-  font-family: "Libre Caslon Display", serif;
-  padding: 8px 15px;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 15px;
 }
 
 .footer {
@@ -1485,6 +1650,21 @@ marquee {
 
 .blockForm form .mrWith:last-child {
   margin-right: 0;
+}
+
+.blockForm form .send {
+  position: relative;
+}
+
+.blockForm form button {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .blockForm input {
@@ -1547,6 +1727,7 @@ marquee {
 
 .link ul li a {
   color: #000;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .link ul li a:hover {
@@ -1600,10 +1781,18 @@ marquee {
   --bs-modal-width:100%!important;
   height: 100% !important;
   --bs-modal-margin: 0rem!important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f3e9e2 !important;
+  z-index: 999;
 }
 
 .modal-content {
   background-color: #f3e9e2 !important;
+  border: none !important;
 }
 
 .modal-header {
@@ -1757,6 +1946,7 @@ marquee {
 .information .mission {
   text-transform: uppercase;
   font-weight: 600;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .information .missiondescript {
@@ -1824,6 +2014,10 @@ marquee {
 .blokrespons .textblocktwo a, .blokresponstwo .textblocktwo a {
   text-transform: uppercase;
   margin-top: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 600;
 }
 
 .blokresponstwo .textblockone {
@@ -1884,6 +2078,8 @@ marquee {
 .responsivblock .bloktext a {
   margin-top: 15px;
   text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
 }
 
 .order {
@@ -1892,12 +2088,6 @@ marquee {
           order: 1;
 }
 
-/*.modal {
-position: absolute;?
-left: 0; right: 0; top: 0; bottom: 0;
-background-color: white;
-z-index: 999;
-}*/
 .block-hightbig {
   height: 700px;
 }
@@ -1971,6 +2161,8 @@ z-index: 999;
 
 .blockfooter a {
   text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
 }
 
 .testinonials {
@@ -1980,6 +2172,7 @@ z-index: 999;
 
 .testinonials h5 {
   font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .testinonials p {
@@ -2025,6 +2218,9 @@ z-index: 999;
 .blockflex .blockwithtext a, .blockflexfoot .blockwithtext a {
   text-transform: uppercase;
   margin-top: 20px;
+  font-size: 14px;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px 15px;
 }
 
 .blockflexfoot {
@@ -2033,6 +2229,7 @@ z-index: 999;
 
 .blockflexfoot h6 {
   margin-bottom: 60px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .flexblock {
@@ -2083,13 +2280,14 @@ z-index: 999;
 }
 
 .card-between .card .card-title {
-  height: 300px;
+  height: 250px;
   font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .card-between .card .card-text {
   font-size: 14px;
-  height: 80px;
+  height: 110px;
 }
 
 .slidersext .card {
@@ -2173,6 +2371,10 @@ z-index: 999;
 
 .women .bltext a {
   text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 600;
 }
 
 .slide-tree {
@@ -2199,6 +2401,7 @@ z-index: 999;
 
 .slide-tree h6 {
   text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .slide-tree p {
@@ -2235,6 +2438,7 @@ z-index: 999;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  bottom: 40px;
 }
 
 .slide-tree .owl-dots .active {
@@ -2296,16 +2500,23 @@ z-index: 999;
 .blocklflex .texts a, .blocklfle .texts a {
   text-transform: uppercase;
   margin-top: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .blocklfle .texts p {
-  font-size: 45px;
-  margin-bottom: 120px;
+  font-size: 40px;
+  margin-bottom: 100px;
+  font-family: "Libre Caslon Display", serif;
+  line-height: 1.1;
 }
 
 .ofers {
   text-align: center;
   margin-bottom: 60px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .slide-image {
@@ -2325,6 +2536,8 @@ z-index: 999;
 .slide-sex .card-header {
   border: none !important;
   background: transparent;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
 }
 
 .slide-sex .card-body {
@@ -2351,6 +2564,10 @@ z-index: 999;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   margin-top: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  font-weight: 600;
 }
 
 .flexcontainer {
@@ -2402,6 +2619,7 @@ z-index: 999;
   border: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .margincl {
@@ -2410,6 +2628,7 @@ z-index: 999;
 
 .margincl .card span {
   font-weight: 600;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .margincl .card .card-title {
@@ -2421,12 +2640,14 @@ z-index: 999;
 }
 
 .results {
-  font-size: 18px !important;
+  font-size: 16px !important;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .tab .nav-link {
   border: none !important;
   color: #000;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .tab .nav-link:hover {
@@ -2477,8 +2698,142 @@ z-index: 999;
 
 .blockteams .blockone h2 {
   margin-bottom: 40px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .blockteams .blocktwo {
   width: 40%;
+}
+
+.contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .askus {
+  width: 50%;
+}
+
+.contact .askus p {
+  font-size: 15px;
+  padding-right: 15rem;
+}
+
+.contact .message {
+  width: 50%;
+}
+
+.contact .message form input {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.contact .message form .massenger {
+  position: relative;
+}
+
+.contact .message form .massenger textarea {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-bottom: 1px solid #000;
+  resize: none;
+}
+
+.contact .message form .massenger button {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  color: #000;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+}
+
+.contact .message ::-webkit-input-placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.contact .message ::-moz-placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.contact .message :-ms-input-placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.contact .message ::-ms-input-placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.contact .message ::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+.fixedbtn {
+  display: none;
+}
+
+.fixedbtn a {
+  position: fixed;
+  bottom: 0px;
+  padding: 15px 10px;
+  background: #aee8fb;
+  text-align: center;
+  width: 100%;
+  z-index: 1030;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/*.wrapper-menu{
+     position: fixed;
+     top: 0;
+     background: white;
+     width: 100%;
+      z-index: 1030;
+}*/
+.mdposit {
+  margin-top: 110px;
+}
+
+.mdposit2 {
+  margin-top: 90px;
+}
+
+.mdposit4 {
+  margin-top: 60px;
+}
+
+.mdposit5 {
+  margin-top: 70px;
+}
+
+.md3 {
+  margin-top: 100px;
+}
+
+.md6 {
+  margin-top: 30px;
+}
+
+.md7 {
+  margin-top: 10px;
+}
+
+.fw-bold {
+  font-family: "Red Hat Display", sans-serif;
 }
