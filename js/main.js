@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $(".slide-one").owlCarousel({
         margin: 35,
+        dotsEach: true,
+        slideBy: 1,
         responsive: {
             0: {
                 items: 1
@@ -45,6 +47,8 @@ $(document).ready(function () {
     });
     $(".sliderfift").owlCarousel({
         margin: 35,
+        dotsEach: true,
+        slideBy: 1,
         responsive: {
             0: {
                 items: 1
@@ -113,6 +117,8 @@ $(document).ready(function () {
         autoplayHoverPause: true
     });
     $(".slide-sex").owlCarousel({
+        dotsEach: true,
+        slideBy: 1,
         responsive: {
             0: {
                 items: 1
