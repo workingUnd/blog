@@ -338,17 +338,17 @@
 
 @media (max-width: 1254px) {
   .description, .descriptiontwo, .descriptionpress {
-    top: 250px !important;
+    top: 200px !important;
     width: 70% !important;
   }
 }
 
 @media (max-width: 1000px) {
   .description, .descriptiontwo, .descriptionpress {
-    top: 230px !important;
+    top: 200px !important;
   }
   .description span, .descriptiontwo span, .descriptionpress span {
-    font-size: 110px !important;
+    font-size: 80px !important;
   }
 }
 
@@ -362,7 +362,7 @@
 @media (max-width: 722px) {
   .description, .descriptiontwo, .descriptionpress {
     top: 230px !important;
-    width: 100% !important;
+    width: 80% !important;
   }
   .description span, .descriptiontwo span, .descriptionpress span {
     font-size: 80px !important;

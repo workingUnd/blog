@@ -1,4 +1,4 @@
-@mixin colorLinks {
+ @mixin colorLinks {
     color: $colorLinks;
     &:hover{
         color: lighten($colorLinks, 40%);
