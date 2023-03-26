@@ -1522,6 +1522,30 @@ marquee {
   font-weight: 600;
 }
 
+.slide-two .owl-dot, .slide-4 .owl-dot {
+  background: transparent !important;
+  height: 13px;
+  width: 13px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid #000 !important;
+}
+
+.slide-two .owl-dots, .slide-4 .owl-dots {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.slide-two .owl-dots .active, .slide-4 .owl-dots .active {
+  height: 8px;
+  width: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #000 !important;
+  background: #000 !important;
+}
+
 .brNone {
   border: none !important;
 }

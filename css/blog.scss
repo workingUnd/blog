@@ -308,6 +308,7 @@ a{
             }
         }
     }
+
 }
 .bgBlue{
     background: #aee8fb!important;
@@ -427,6 +428,27 @@ marquee{
             font-size: 14px;
             font-family: $fontFemeli;
             font-weight: 600;
+        }
+    }
+    .owl-dot{
+        background: transparent!important;
+        height: 13px;
+        width: 13px;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1px solid #000!important;
+    }
+    .owl-dots{
+        position: absolute;
+        right: 0;
+        top: -40px;
+        .active{
+            height: 8px;
+            width: 8px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #000!important;
+            background: #000!important;
         }
     }
 }
