@@ -3,38 +3,13 @@
     &:hover{
         color: lighten($colorLinks, 40%);
     }
-}
-@mixin logo{
-    font-weight: bold;
-    color: $mainTextColor;
-    font-size: 30px;
-}
+}  
 
-@mixin links-humburg-menu{
-    color: $colorLinks2;
-    font-size: 80px;
-    font-weight: bold;
-    font-family: $fontstext;
-    &:hover{
-        color: pink;
-    }
-}
-@mixin cardCategory{
-    font-size: 23px!important;
-    font-family: $fontstext;
-    color: $colorLinks;
-}
-@mixin cardDescription{
-    font-size: 40px;
-    font-weight: bold;
-    font-family: $fontstext;
-    color: $colorLinks;
-}
-@mixin WidthFlex{
+@mixin widthFlex{
     width: 100%;
     display: flex;
 }
-@mixin Widthslase{
+@mixin widthSlase{
     width: 50%;
 }
 @mixin img{
@@ -42,7 +17,7 @@
     height: 100%;
     object-fit: cover;
 }
-@mixin responsiveimg{
+@mixin responsiveImg{
     position: relative;
     padding: 0px;
     margin: auto;
