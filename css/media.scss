@@ -470,14 +470,25 @@
 }
 
 @media (max-width: 800px){
-    .logoImgShow{
-        width: 200px!important;
+    .tetxLogo{
+        font-size: 45px!important;
     }
 }
 
-@media (max-width: 400px){
-    .logoImgShow{
-        width: 140px!important;
+@media (max-width: 500px){
+    .tetxLogo{
+        font-size: 35px!important;
+    }
+}
+@media (max-width: 800px){
+    .tetxLogoDark{
+        font-size: 45px!important;
+    }
+}
+
+@media (max-width: 500px){
+    .tetxLogoDark{
+        font-size: 35px!important;
     }
 }
 
@@ -596,7 +607,7 @@
 @media (max-width: 993px){
     .blokrespons{
         .textblockone{
-            @include Widthslase;
+            @include widthSlase;
             padding-right: 50px;
             p{
                 font-size: 50px!important;

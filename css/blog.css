@@ -421,14 +421,26 @@
 }
 
 @media (max-width: 800px) {
-  .logoImgShow {
-    width: 200px !important;
+  .tetxLogo, .tetxLogoDark {
+    font-size: 45px !important;
   }
 }
 
-@media (max-width: 400px) {
-  .logoImgShow {
-    width: 140px !important;
+@media (max-width: 500px) {
+  .tetxLogo, .tetxLogoDark {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .tetxLogoDark {
+    font-size: 45px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tetxLogoDark {
+    font-size: 35px !important;
   }
 }
 
@@ -1092,6 +1104,19 @@ a {
   text-decoration: none !important;
 }
 
+.tetxLogo, .tetxLogoDark {
+  font-family: "Libre Caslon Display", serif;
+  color: #fff;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 55px;
+  margin-right: 30px;
+}
+
+.tetxLogoDark {
+  color: #000;
+}
+
 .main-img img {
   position: absolute;
   padding: 0px;
@@ -1122,7 +1147,7 @@ a {
 }
 
 .wrapper-menu ul a, .wrapper-menu2 ul a, .wrapper-menu3 ul a {
-  color: #aee8fb;
+  color: #fff;
   margin-right: 20px !important;
   text-transform: uppercase;
   font-family: "Red Hat Display", sans-serif;
@@ -1135,35 +1160,35 @@ a {
 }
 
 .wrapper-menu ul a:hover, .wrapper-menu2 ul a:hover, .wrapper-menu3 ul a:hover {
-  color: #aee8fb !important;
+  color: #fff !important;
 }
 
 .wrapper-menu .active, .wrapper-menu2 .active, .wrapper-menu3 .active {
-  color: #aee8fb !important;
+  color: #fff !important;
 }
 
 .wrapper-menu2 ul a {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .wrapper-menu2 ul a:hover {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .wrapper-menu2 .active {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .wrapper-menu3 ul a {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .wrapper-menu3 ul a:hover {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .wrapper-menu3 .active {
-  color: #000 !important;
+  color: #fff !important;
 }
 
 .wrapper-button .btn, .wrapper-button2 .btn, .wrapper-button3 .btn {
@@ -1177,29 +1202,26 @@ a {
 }
 
 .wrapper-button .btn a, .wrapper-button2 .btn a, .wrapper-button3 .btn a {
-  color: #aee8fb;
+  color: #fff;
   text-transform: uppercase;
   font-family: "Red Hat Display", sans-serif;
 }
 
-.wrapper-button2 .btn-outline-light {
-  color: #fff !important;
-}
-
-.wrapper-button2 .btn-outline-light:hover {
-  background: #fff !important;
-  color: #000 !important;
-  border: #fff !important;
-}
-
-.wrapper-button2 .btn-info {
-  background: #fff !important;
-  color: #000 !important;
-  border: #fff !important;
-}
-
 .wrapper-button3 .btn-info {
   color: #000 !important;
+  background: #fff;
+  border-color: #fff;
+}
+
+.wrapper-button3 .btn-outline-dark {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.wrapper-button3 .btn-outline-dark:hover {
+  color: #000 !important;
+  background: #fff;
+  border-color: #fff;
 }
 
 .wrapper-button3 a {
@@ -1259,7 +1281,7 @@ a {
 }
 
 .description span, .descriptiontwo span, .descriptionpress span {
-  color: #000;
+  color: #fff;
   font-size: 130px;
   line-height: 1;
   font-family: "Libre Caslon Display", serif;
@@ -1283,6 +1305,10 @@ a {
   border-radius: 7.5px;
   background-color: red;
   margin-right: 10px;
+}
+
+.descriptiontwo span, .descriptionpress span {
+  color: #000;
 }
 
 .descriptionpress {
